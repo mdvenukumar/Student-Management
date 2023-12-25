@@ -114,3 +114,10 @@ if uploaded_file is not None:
         # Display raw data
         st.subheader('Raw Data')
         st.write(df)
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
